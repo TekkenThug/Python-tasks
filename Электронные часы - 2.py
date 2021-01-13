@@ -1,0 +1,17 @@
+a=int(input())
+if a>=86400:
+    while a>=86400:
+        a=a-86400
+b=a//3600
+a=a-(b*3600)
+s=a//60
+a=a-(s*60)
+c=a
+nol=str(0)
+if s <=9:
+    s=str(s)
+    s=nol+s
+if c<=9:
+    c=str(c)
+    c=nol+c
+print(b,s,c,sep=':')
